@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สินค้าทั้งหมด | Shampy_shampoo</title>
+  <meta name="description" content="ยาสระผม Shampy_shampoo ทั้ง 4 อารมณ์ ขนาดเล็ก 60ml และขนาดใหญ่ 150ml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* เฉพาะหน้าสินค้า */
+    .product-section {
+      padding-top: var(--space-5);
+    }
+
+    .page-title {
+      margin-bottom: var(--space-3);
+      font-size: var(--text-2xl);
+      line-height: 1.5;
+    }
+
+    .page-lead {
+      margin-bottom: var(--space-5);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">Shampy_shampoo</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html" aria-current="page">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section product-section">
+      <div class="container container-narrow text-center">
+        <h1 class="page-title title-mark text-center">สินค้าทั้งหมด</h1>
+        <p class="lead page-lead">เลือกอารมณ์ที่ใช่ ในขนาดเล็ก 60ml หรือขนาดใหญ่ 150ml</p>
+      </div>
+
+      <div class="container">
+        <div id="filter-bar" class="filter"></div>
+        <div id="product-list" class="product-grid"></div>
+        <noscript><p class="text-muted text-center">กรุณาเปิดใช้งาน JavaScript เพื่อดูรายการสินค้า</p></noscript>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <span>Shampy_shampoo</span>
+      <span>© 2026 Shampy_shampoo สงวนลิขสิทธิ์</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

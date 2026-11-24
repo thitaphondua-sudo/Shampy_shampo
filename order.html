@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สั่งซื้อสินค้า | Shampy_shampoo</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* เฉพาะหน้าสั่งซื้อ */
+    .order-section {
+      padding-top: var(--space-5);
+    }
+
+    .page-title {
+      margin-bottom: var(--space-3);
+      font-size: var(--text-2xl);
+      line-height: 1.5;
+    }
+
+    .page-lead {
+      margin-bottom: var(--space-5);
+    }
+
+    .form-field.field-compact textarea {
+      min-height: 4.5rem;
+    }
+
+    .form-actions {
+      margin-top: var(--space-4);
+    }
+
+    .form-back {
+      margin-top: var(--space-3);
+      font-size: var(--text-sm);
+      text-align: center;
+      color: var(--color-ink-soft);
+    }
+
+    .form-back a {
+      padding-bottom: 0.15rem;
+      border-bottom: 1px solid var(--color-line);
+      transition: border-color var(--transition);
+    }
+
+    .form-back a:hover {
+      border-bottom-color: var(--color-accent);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">Shampy_shampoo</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section order-section">
+      <div class="container container-narrow">
+        <h1 class="page-title title-mark">สั่งซื้อสินค้า</h1>
+        <p class="lead page-lead">กรอกข้อมูลด้านล่าง แล้วกดยืนยันสั่งซื้อ</p>
+
+        <form id="orderForm">
+          <div class="form-field">
+            <label for="customerName">ชื่อลูกค้า</label>
+            <input type="text" id="customerName" name="customerName" autocomplete="name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="contact">เบอร์โทร / Line</label>
+            <input type="text" id="contact" name="contact" autocomplete="off" required>
+            <p class="form-hint">ระบุเบอร์โทรหรือ Line ID ที่ติดต่อได้</p>
+          </div>
+
+          <div class="form-field field-compact">
+            <label for="items">รายการสินค้า</label>
+            <textarea id="items" name="items" rows="2" required></textarea>
+            <p class="form-hint">เติมจากสินค้าที่คุณเลือกให้อัตโนมัติ แก้ไขได้</p>
+          </div>
+
+          <div class="form-field">
+            <label for="total">จำนวนเงินรวม (บาท)</label>
+            <input type="number" id="total" name="total" inputmode="numeric" min="0" step="any" required>
+          </div>
+
+          <div class="form-field field-compact">
+            <label for="note">หมายเหตุ</label>
+            <textarea id="note" name="note" rows="2"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-solid btn-block">ยืนยันสั่งซื้อ</button>
+          </div>
+
+          <p class="form-back"><a href="product.html">เลือกดูสินค้าอื่น</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <span>Shampy_shampoo</span>
+      <span>© 2026 Shampy_shampoo สงวนลิขสิทธิ์</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "fresh-60",
+    "name": "ยาสระผม Shampy Fresh เล็ก",
+    "mood": "fresh",
+    "type": "Shampoo",
+    "size": "60ml",
+    "price": 89,
+    "image": "images/fresh.jpg",
+    "description": "ยาสระผมสำหรับวันที่อยากรู้สึกโปร่งเบา สะอาดสดชื่น ขนาดพกพา เหมาะกับการเดินทางหรือลองใช้ครั้งแรก"
+  },
+  {
+    "id": "fresh-150",
+    "name": "ยาสระผม Shampy Fresh ใหญ่",
+    "mood": "fresh",
+    "type": "Shampoo",
+    "size": "150ml",
+    "price": 199,
+    "image": "images/fresh.jpg",
+    "description": "ยาสระผมสำหรับวันที่อยากรู้สึกโปร่งเบา สะอาดสดชื่น ขนาดใหญ่ ใช้ได้นานสำหรับทุกวัน"
+  },
+  {
+    "id": "sweet-60",
+    "name": "ยาสระผม Shampy Sweet เล็ก",
+    "mood": "sweet",
+    "type": "Shampoo",
+    "size": "60ml",
+    "price": 89,
+    "image": "images/sweet.jpg",
+    "description": "ยาสระผมสำหรับวันที่อยากอารมณ์ดี อ่อนโยนและละมุน ขนาดพกพา เหมาะกับการเดินทางหรือลองใช้ครั้งแรก"
+  },
+  {
+    "id": "sweet-150",
+    "name": "ยาสระผม Shampy Sweet ใหญ่",
+    "mood": "sweet",
+    "type": "Shampoo",
+    "size": "150ml",
+    "price": 199,
+    "image": "images/sweet.jpg",
+    "description": "ยาสระผมสำหรับวันที่อยากอารมณ์ดี อ่อนโยนและละมุน ขนาดใหญ่ ใช้ได้นานสำหรับทุกวัน"
+  },
+  {
+    "id": "confident-60",
+    "name": "ยาสระผม Shampy Confident เล็ก",
+    "mood": "confident",
+    "type": "Shampoo",
+    "size": "60ml",
+    "price": 89,
+    "image": "images/confident.jpg",
+    "description": "ยาสระผมสำหรับวันสำคัญที่อยากเดินเข้าห้องอย่างมั่นใจ ขนาดพกพา เหมาะกับการเดินทางหรือลองใช้ครั้งแรก"
+  },
+  {
+    "id": "confident-150",
+    "name": "ยาสระผม Shampy Confident ใหญ่",
+    "mood": "confident",
+    "type": "Shampoo",
+    "size": "150ml",
+    "price": 199,
+    "image": "images/confident.jpg",
+    "description": "ยาสระผมสำหรับวันสำคัญที่อยากเดินเข้าห้องอย่างมั่นใจ ขนาดใหญ่ ใช้ได้นานสำหรับทุกวัน"
+  },
+  {
+    "id": "romance-60",
+    "name": "ยาสระผม Shampy Romance เล็ก",
+    "mood": "romance",
+    "type": "Shampoo",
+    "size": "60ml",
+    "price": 89,
+    "image": "images/romance.jpg",
+    "description": "ยาสระผมสำหรับค่ำคืนที่อยากให้ผมหอมน่าเข้าใกล้ ขนาดพกพา เหมาะกับการเดินทางหรือลองใช้ครั้งแรก"
+  },
+  {
+    "id": "romance-150",
+    "name": "ยาสระผม Shampy Romance ใหญ่",
+    "mood": "romance",
+    "type": "Shampoo",
+    "size": "150ml",
+    "price": 199,
+    "image": "images/romance.jpg",
+    "description": "ยาสระผมสำหรับค่ำคืนที่อยากให้ผมหอมน่าเข้าใกล้ ขนาดใหญ่ ใช้ได้นานสำหรับทุกวัน"
+  }
+]

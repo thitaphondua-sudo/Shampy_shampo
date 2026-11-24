@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shampy_shampoo</title>
+  <meta name="description" content="เปลี่ยนทุกการสระผมให้เป็นการเลือกอารมณ์ที่ใช่ เติมความหอมสะอาดและมั่นใจในแบบที่เป็นคุณกับ Shampy_shampoo">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* เฉพาะหน้าแรก */
+    .hero--full {
+      min-height: calc(100vh - 4.5rem);
+      min-height: calc(100svh - 4.5rem);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero__content {
+      max-width: 52rem;
+      margin-inline: auto;
+    }
+
+    .hero__title {
+      margin-bottom: var(--space-5);
+      font-size: clamp(2rem, 1.2rem + 3.4vw, 3.75rem);
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    .hero__line {
+      display: block;
+      text-wrap: balance;
+    }
+
+    .hero__line + .hero__line {
+      margin-top: var(--space-2);
+      font-family: var(--font-serif-th);
+      font-size: clamp(1.0625rem, 0.9rem + 0.7vw, 1.375rem);
+      font-weight: 300;
+      line-height: 1.9;
+      color: var(--color-ink-soft);
+    }
+
+    .hero__dots {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-2);
+      margin-top: var(--space-5);
+    }
+
+    .hero__dots .mood-dot {
+      margin: 0;
+    }
+
+    .mood-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+      gap: var(--space-3);
+    }
+
+    .mood-card {
+      display: flex;
+      flex-direction: column;
+      padding: var(--space-4) var(--space-3);
+      background: var(--color-white);
+      border: 1px solid var(--color-line);
+      border-radius: var(--radius);
+      transition: border-color var(--transition);
+    }
+
+    .mood-card:hover {
+      border-color: var(--color-beige-deep);
+    }
+
+    .mood-card .title-mark {
+      margin-bottom: var(--space-3);
+    }
+
+    .mood-card__th {
+      margin-left: 0.75rem;
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 300;
+      color: var(--color-ink-soft);
+    }
+
+    .mood-card__desc {
+      flex: 1;
+      margin-bottom: var(--space-3);
+      font-size: var(--text-sm);
+      line-height: 1.9;
+      color: var(--color-ink-soft);
+    }
+
+    .mood-card__cue {
+      align-self: flex-start;
+      padding-bottom: 0.15rem;
+      border-bottom: 1px solid var(--color-line);
+      font-size: var(--text-sm);
+      color: var(--color-accent-deep);
+      transition: border-color var(--transition);
+    }
+
+    .mood-card:hover .mood-card__cue {
+      border-bottom-color: var(--color-accent);
+    }
+
+    @media (max-width: 600px) {
+      .hero--full {
+        min-height: calc(100vh - 3.75rem);
+        min-height: calc(100svh - 3.75rem);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">Shampy_shampoo</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html" aria-current="page">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--full">
+      <div class="container hero__content">
+        <h1 class="hero__title">
+          <span class="hero__line">เปลี่ยนทุกการสระผมให้เป็นการเลือกอารมณ์ที่ใช่</span>
+          <span class="hero__line">เติมความหอมสะอาดและมั่นใจในแบบที่เป็นคุณกับ Shampy_shampoo</span>
+        </h1>
+        <a class="btn" href="product.html">ดูสินค้าทั้งหมด</a>
+        <div class="hero__dots" aria-hidden="true">
+          <span class="mood-dot" data-mood="fresh"></span>
+          <span class="mood-dot" data-mood="sweet"></span>
+          <span class="mood-dot" data-mood="confident"></span>
+          <span class="mood-dot" data-mood="romance"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream" id="moods">
+      <div class="container">
+        <h2 class="title-mark text-center">เลือกตามอารมณ์ของคุณ</h2>
+
+        <div class="mood-grid">
+          <a class="mood-card" href="product.html?mood=fresh" data-mood="fresh">
+            <h3 class="title-mark">Fresh<span class="mood-card__th">สดชื่น</span></h3>
+            <p class="mood-card__desc">ปลุกความตื่นตัวให้ทุกเช้าด้วยสัมผัสที่โปร่ง สะอาด และเบาสบาย เหมือนได้รีเฟรชความเหนื่อยล้าให้พร้อมเริ่มต้นวันใหม่อย่างสดใส</p>
+            <span class="mood-card__cue">ดูสินค้า Fresh</span>
+          </a>
+
+          <a class="mood-card" href="product.html?mood=sweet" data-mood="sweet">
+            <h3 class="title-mark">Sweet<span class="mood-card__th">หวานละมุน</span></h3>
+            <p class="mood-card__desc">โอบกอดความรู้สึกด้วยกลิ่นหอมหวานแผ่วเบาที่ให้ความอ่อนโยน น่ารัก และอบอุ่นใจ ช่วยผ่อนคลายในวันที่ต้องการความสบายใจเป็นพิเศษ</p>
+            <span class="mood-card__cue">ดูสินค้า Sweet</span>
+          </a>
+
+          <a class="mood-card" href="product.html?mood=confident" data-mood="confident">
+            <h3 class="title-mark">Confident<span class="mood-card__th">มั่นใจ</span></h3>
+            <p class="mood-card__desc">เสริมบุคลิกให้ดูนิ่ง สะอาด และมีระดับ ด้วยกลิ่นหอมที่สร้างความน่าเชื่อถือ ให้คุณพร้อมออกไปเจอผู้คนและรับมือกับทุกสถานการณ์</p>
+            <span class="mood-card__cue">ดูสินค้า Confident</span>
+          </a>
+
+          <a class="mood-card" href="product.html?mood=romance" data-mood="romance">
+            <h3 class="title-mark">Romance<span class="mood-card__th">โรแมนติก</span></h3>
+            <p class="mood-card__desc">เติมเสน่ห์ที่อบอุ่นและน่าหลงใหลด้วยความหวานที่ลุ่มลึก ชวนให้คนรอบข้างจดจำและอยากเข้าใกล้ในทุกช่วงเวลา</p>
+            <span class="mood-card__cue">ดูสินค้า Romance</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <span>Shampy_shampoo</span>
+      <span>© 2026 Shampy_shampoo สงวนลิขสิทธิ์</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
